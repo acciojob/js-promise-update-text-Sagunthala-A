@@ -2,8 +2,8 @@
 
 const output = document.getElementById("output");
 
-async function delayedHello() {
-            return await new Promise((resolve,reject) => {
+function delayedHello() {
+            return new Promise((resolve,reject) => {
                 setTimeout(() => {
                     resolve("Hello, world!");
                 }, 1000);
